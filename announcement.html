@@ -18,7 +18,7 @@
   <title>Student Page</title>
 </head>
 <body>
-  <nav class="bg-[#F0F9FF] rounded-b-xl  shadow-lg">
+  <nav class="bg-[#F0F9FF] rounded-b-xl shadow-lg">
     <div class="max-w-6xl mx-auto px-4 py-2">
       <div class="flex justify-between">
           <div class="flex space-x-4">
@@ -27,22 +27,23 @@
             </a>
 
           <!-- primary nav -->
-          <!-- primary nav -->
           <div class="hidden md:flex items-center space-x-1">
-            <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Registration</a>
-            <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Schedule</a>
-            <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">My Grades</a>
-            <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Announcements</a>
-            <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Account</a>
+              <a href="./main_page.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+              <a href="announcement.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Announcements</a>
+              <a href="registration.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Registration</a>
+              <a href="schedule.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Schedule</a>
+              <a href="./grades.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">My Grades</a>
+              <a href="./account.html" class="py-5 px-3 text-gray-700 hover:text-gray-900">Account</a>
 
-        </div>
-        </div>
+
+          </div>
+          </div>
 
           <!-- secondary nav -->
           <div class="hidden md:flex items-center space-x-1">
-          <a href="" class="py-2 px-3 bg-yellow-400 hover:bg-[#FAAE2B] text-yellow-900 hover:text-yellow-800 rounded transition duration-300">Signout</a>
-          </div>
-
+            <a href="./index.html" class="py-2 px-3 bg-[#FAAE2B] hover:bg-yellow-200 text-white rounded transition duration-300">Signout</a>
+            </div>
+  
           <!-- mobile button goes here -->
           <div class="md:hidden flex items-center">
           <button class="mobile-menu-button">
@@ -55,18 +56,16 @@
     </div>
 
     <!-- mobile menu -->
-    <div style="transition: 20ms;" class="mobile-menu hidden md:hidden">
-      <a href="main_page.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
-      <a href="announcement.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Announcements</a>
-      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Registration</a>
-      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Schedule</a>
-      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">My Grades</a>
-      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Account</a>
+    <div class="mobile-menu hidden md:hidden">
+      <a href="./main_page.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+      <a href="./announcement.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Announcements</a>
+      <a href="./registration.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Registration</a>
+      <a href="./shcedule.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Schedule</a>
+      <a href="./grades.html" class="block py-2 px-4 text-sm hover:bg-gray-200">My Grades</a>
+      <a href="./account.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Account</a>
       <div class="py-2 px-4">
-        <a href="#" class="py-1.5 px-2 bg-[#FAAE2B] hover:bg-yellow-400 text-white rounded transition duration-300">Signout</a>
+        <a href="./index.html" class="py-1.5 px-2 bg-[#FAAE2B] hover:bg-yellow-400 text-white rounded transition duration-300">Signout</a>
       </div>
-
-
     </div>
   </nav>
 
