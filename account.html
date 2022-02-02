@@ -14,7 +14,7 @@
     menu.classList.toggle("hidden");
     });
   </script>
-
+    
   <title>Student Page</title>
 </head>
 <body>
@@ -69,80 +69,62 @@
     </div>
   </nav>
 
-
-<div class="grid grid-cols-1 sm:grid-cols-2 grid-flow-rows mt-10 md:grid-cols-2 justify-items-center gap-5 text-sm px-4">
-  <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
-    <p class="font-semibold text-lg pb-2">Information Systems Students</p>
-    <div class="flex justify-between">
-      <span class="content-start font-medium">Your Student ID</span>
-      <span class="content-end">2131110461</span>
-    </div>
-    <div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 grid-flow-rows mt-10 md:grid-cols-2 justify-items-center gap-5 text-sm px-4">
+    <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
+      <p class="font-semibold text-lg pb-2">Information Systems Students</p>
       <div class="flex justify-between">
-        <span class="content-start font-medium">Current Semester</span>
-        <span class="content-end">4</span>
+        <span class="content-start font-medium">Your Student ID:</span>
+        <span class="content-end">2131110461</span>
       </div>
-        <div>
-          <div class="flex justify-between">
-            <span class="content-start font-medium">GPA</span>
-            <span class="content-end">2.93</span>
-          </div>
-        <div>
+      <div>
+        <div class="flex justify-between">
+          <span class="content-start font-medium">Current Semester:</span>
+          <span class="content-end">4</span>
+        </div>
+          <div>
             <div class="flex justify-between">
-            <span class="content-start font-medium">MGPA</span>
-            <span class="content-end">2.94</span>
+              <span class="content-start font-medium">GPA:</span>
+              <span class="content-end">2.93</span>
             </div>
+          <div>
+              <div class="flex justify-between">
+              <span class="content-start font-medium">MGPA:</span>
+              <span class="content-end">2.94</span>
+              </div>
+          </div>
+          
+          <div>
+            <div class="flex justify-between">
+            <span class="content-start font-medium">Email:</span>
+            <span class="content-end">MAlotaibi@sci.ku.edu.kw</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between">
+            <span class="content-start font-medium">Name</span>
+            <span class="content-end">Mohammed Alotaibi</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg">
-    <h1 class="font-semibold">
-      Announcement: Genral
-    </h1>
-    <div>
-        <p class="text-justify">
-            Dear Students, Faculty, and Staff, <br>I would love to congratulate you on the beginning of the new semester, I hope this
-            semester is filled with new achievements and success.
-        </p>
+      <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
+        <p class="font-semibold text-lg pb-2">Change Password</p>
+        <!-- You put the link in action. For Example:
+          action="./Alsulaiteen_is_the_best_in_za_wardo"-->
+        <form method="GET" action="#">
+          <label class="font-medium">Old Password</label><br>
+          <input type="password" name="password" id="password" placeholder="Old Password" class="mt-2 bg-[#F0F9FF] border border-black text-sm rounded-lg focus:ring-black-500 focus:border-black-400 block w-full p-2.5 placeholder-gray-400"><br>
+          <label class="font-medium">New Password</label><br>
+          <input type="password" name="New Password" id="npassword" placeholder="New Password" class="mt-2 bg-[#F0F9FF] border border-black text-sm rounded-lg focus:ring-black-500 focus:border-black-400 block w-full p-2.5 placeholder-gray-400"><br>
+          <label class="font-medium">Confirm Password</label><br>
+          <input type="password" name="password" id="cpassword" placeholder="Confirm Password" class="mt-2 bg-[#F0F9FF] border border-black text-sm rounded-lg focus:ring-black-500 focus:border-black-500 block w-full p-2.5 placeholder-grey-400">
+          <button type="submit" id="submit" name="submit" class="mt-4 w-full text-white bg-[#FAAE2B] hover:bg-yellow-200 rounded transition duration-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Change Password</button>
+        </form>
+      </div>
     </div>
-    <div>
-        KU Deanship <small>20th Sep. 2023</small>
-    </div>
-  </div>
-
-  <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg">
-    <h1 class="font-semibold">
-        Announcement: Introduction to Psychology
-
-    </h1>
-    <div>
-        <p class="text-justify">
-            Dear Students, <br>
-            you can buy the textbook: Introduction to Psychology 4th Edition in the bookstore
-        </p>
-    </div>
-    <div>
-        Dr. Pam Halpert <small>17th Sep. 2023</small>
-    </div>
-  </div>
-
-  <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg mb-7">
-    <h1 class="font-semibold">
-        Reminder!
-    </h1>
-    <div>
-        <p class="text-justify">
-            The new semester starts at Wednsday 20th of Sep 2023
-        </p>
-    </div>
-    <div>
-        <small>17th Sep. 2023</small>
-    </div>
-  </div>
-
-
-</div>
 </body>
 </html>
