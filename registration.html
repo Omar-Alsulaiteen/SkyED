@@ -49,6 +49,22 @@
       document.getElementById('modal2').classList.toggle('hidden');
     }
 
+    function remove_cop2() {
+      const remove = document.getElementById('cp2');
+      remove.style.display = 'none';
+
+    }
+    function remove_c2() {
+      const remove = document.getElementById('rc2');
+      remove.style.display = 'none';
+
+    }
+    function remove_ch2() {
+      const remove = document.getElementById('rch2');
+      remove.style.display = 'none';
+
+    }
+
 
   </script>
 
@@ -226,10 +242,10 @@
         </div>
       </div>
     </div>
-    <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2 -mb-7">
-      <p class="font-semibold text-lg pb-2">Current Schedule</p>
+    <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2 -mb-4 bg-[#F0F9FF]">
+      <p class="font-semibold text-lg pb-2 text-center">Current Schedule</p>
     </div>
-    <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
+    <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2" id="rch2">
       <p class="font-semibold text-lg pb-2">Chemistry 2</p>
       <div class="flex justify-between">
         <span class="content-start font-medium">Section</span>
@@ -266,7 +282,7 @@
       <div>
         <div class="flex justify-center">
         <span class="content-center font-medium mt-5 -ml-6">                    
-          <button class="ml-6 rounded-lg btn inline-block px-4 py-2.5 -ml-7 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:red-100 hover:shadow-lg focus:bg-red-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-300 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
+          <button onclick="remove_ch2()" class="ml-6 rounded-lg btn inline-block px-4 py-2.5 -ml-7 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:red-100 hover:shadow-lg focus:bg-red-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-300 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
           Remove
         </button>
         </span>
@@ -276,7 +292,7 @@
 </div>
 </div>
 
-<div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2 -mt-7">
+<div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2" id="rc2">
   <p class="font-semibold text-lg pb-2">Calculus 2</p>
   <div class="flex justify-between">
     <span class="content-start font-medium">Section</span>
@@ -312,8 +328,8 @@
   </div>
   <div>
     <div class="flex justify-center">
-    <span class="content-center font-medium mt-5 -ml-6">                    
-      <button class="ml-6 rounded-lg btn inline-block px-4 py-2.5 -ml-7 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:red-100 hover:shadow-lg focus:bg-red-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-300 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
+    <span  class="content-center font-medium mt-5 -ml-6">                    
+      <button  class="ml-6 rounded-lg btn inline-block px-4 py-2.5 -ml-7 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:red-100 hover:shadow-lg focus:bg-red-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-300 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" onclick="remove_c2()">
       Remove
     </button>
     </span>
@@ -323,7 +339,7 @@
 </div>
 </div>
 
-<div id="cp2" class="hidden border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2 -mt-7">
+<div id="cp2" class="hidden border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
   <p class="font-semibold text-lg pb-2">Computer Programming 2</p>
   <div class="flex justify-between">
     <span class="content-start font-medium">Section</span>
@@ -360,7 +376,7 @@
   <div>
     <div class="flex justify-center">
     <span class="content-center font-medium mt-5 -ml-6">                    
-      <button class="ml-6 rounded-lg btn inline-block px-4 py-2.5 -ml-7 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:red-100 hover:shadow-lg focus:bg-red-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-300 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
+      <button onclick="remove_cop2()" class="ml-6 rounded-lg btn inline-block px-4 py-2.5 -ml-7 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:red-100 hover:shadow-lg focus:bg-red-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-300 active:shadow-lg transition duration-150 ease-in-out flex items-center" type="button" id="button-addon2">
       Remove
     </button>
     </span>
@@ -371,7 +387,7 @@
 </div>
 
 
-<div id="cu" class="hidden border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2 -mt-7">
+<div id="cu" class="hidden border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
   <p class="font-semibold text-lg pb-2">Programming in C and Unix</p>
   <div class="flex justify-between">
     <span class="content-start font-medium">Section</span>
