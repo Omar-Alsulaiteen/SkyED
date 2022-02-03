@@ -111,17 +111,18 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 grid-flow-rows mt-10 md:grid-cols-2 justify-items-center gap-5 text-sm px-4">
       <div class="border border-black w-full m-2 py-3 px-2 rounded-lg shadow-lg grid md:col-span-2">
         <p class="font-semibold text-lg pb-2">Change Password</p>
-        <form>
-          <label>Old Password</label><br>
-          <input type="password" placeholder="Old password" class="border rounded-lg"><br>
-          <label>New Password</label><br>
-          <input type="password" placeholder="New password" class="border rounded-lg"><br>
-          <label>Confirm Password</label><br>
-          <input type="password" placeholder="confirm password" class="border rounded-lg"><br>
-          <input type="submit" class>
+        <!-- You put the link in action. For Example:
+          action="./Alsulaiteen_is_the_best_in_za_wardo"-->
+        <form method="GET" action="#">
+          <label class="font-medium">Old Password</label><br>
+          <input type="password" name="password" id="password" placeholder="Old Password" class="mt-2 bg-[#F0F9FF] border border-black text-sm rounded-lg focus:ring-black-500 focus:border-black-400 block w-full p-2.5 placeholder-gray-400"><br>
+          <label class="font-medium">New Password</label><br>
+          <input type="password" name="New Password" id="npassword" placeholder="New Password" class="mt-2 bg-[#F0F9FF] border border-black text-sm rounded-lg focus:ring-black-500 focus:border-black-400 block w-full p-2.5 placeholder-gray-400"><br>
+          <label class="font-medium">Confirm Password</label><br>
+          <input type="password" name="password" id="cpassword" placeholder="Confirm Password" class="mt-2 bg-[#F0F9FF] border border-black text-sm rounded-lg focus:ring-black-500 focus:border-black-500 block w-full p-2.5 placeholder-grey-400">
+          <button type="submit" id="submit" name="submit" class="mt-4 w-full text-white bg-[#FAAE2B] hover:bg-yellow-200 rounded transition duration-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Change Password</button>
         </form>
       </div>
     </div>
